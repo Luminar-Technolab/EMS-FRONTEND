@@ -1,0 +1,86 @@
+
+
+        REACT - Front End Technology
+    ------------------------------------
+
+        Commands
+    ----------------
+
+    1. create project: npx create-react-app project-name
+    2. Run project: npm start
+    3. Istall material ui: npm install @mui/material @emotion/react @emotion/styled
+    4. to generate build: npm run build
+    5. to install axios: npm i axios
+    6. install react-bootstrap: npm install react-bootstrap bootstrap
+        - add theme using bootswatch.com as well.
+    7. to add REDUX: npm i redux react-redux redux-thunk
+    8. to add Redux toolkit: npm install @reduxjs/toolkit react-redux
+    9. to add dropdown : npm i react-select
+    10. to display toaster notification: npm i react-toastify
+
+
+        Features
+    ----------------
+
+    1. Component Based Approach
+    2. JSX (JavaScript XML)
+    3. Virtual DOM
+    4. Fast
+    5. Front Technology DIfference
+
+        Angular                 React                   Vue
+    ------------------   ---------------------     -----------------
+    1. Framework                Library                 Framework
+        - Google                   - Facebook              - Open Source
+    2. TypeScript               JavaScript              JavaScript
+    3. Real DOM                 Virtual DOM             Virtual DOM
+    4. Two Way Binding          One way Binding         Two Way Binding
+
+    6. Components (A js file with file name starts with capital letter)
+        - Types
+            - Functional Based Component / state less Components
+            - Class Based Component / stateful Components
+
+    7. State: Used to hold values which can be shared with Components
+    8. React Hooks
+        - UseState: used to create state
+            const [state-name,function-name used to update state]=useState(initial-value)
+        - useEffect: synchronize a component with an external system.
+            useEffect(setup, dependencies?)
+        - useParams() : to retrieve path parameter
+        - useDispatch() : 
+        - useSelector() :
+        - useNavigate() : navigate from one page to another
+    9. Props: is an object used to access state from parent in child
+    10. Event binding 
+    11. Conditional Rendering
+    12. Axios: Axios is a simple promise based HTTP client for the browser and node.js
+        - Axios Instance:syntax: axios.create([config])
+    13. Routing in react: react-router-dom package
+        - to provide routing render root component in Browser Router 
+        - to set up path for component in root component
+            - use routes and route selctor
+            - use route selector to set up path for each component
+            - wrap all route selector in routes selector in root component
+    14. REDUX - State management in React
+        - To avoid props drilling and decrease coupling
+        - Basics
+            - Store : to hold state, create store.js file in src
+                    - createStore()
+                    - Provide store to all components using Provider
+            - Action : create action folder in src
+                    - create action js file to define logic to update state
+                    - send payload to reducer
+            - Component : dispatch action in order to update state
+                            - useDispatch() hook
+                          select updated state from store
+                            - useSelector() hook
+            - Reducer :  to update the state in store
+    15. REDUX TOOLKIT: intended to be the standard way to write Redux logic
+        - install: npm install @reduxjs/toolkit react-redux
+        - store: configureStore() : wrap both createStore and redux-thunk
+        - createSlice: used to combine reducer and actions
+    16. Context API : to share data between components without props drilling
+        - createContext hook : create Context
+        - share the context through out your app
+        - useContext hook : use to select context to get the shared data
